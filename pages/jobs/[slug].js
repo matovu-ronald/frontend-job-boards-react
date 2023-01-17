@@ -16,26 +16,7 @@ const DetailedJobs = ({ job }) => {
           <h1 className="mb-3 text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
             {job.vacancy}
           </h1>
-          <div className="flex mb-6 space-x-2 text-sm">
-            <a
-              className="p-1 bg-indigo-500 rounded-full text-gray-50 badge hover:bg-gray-200"
-              href="#"
-            >
-              CSS
-            </a>
-            <a
-              className="p-1 bg-indigo-500 rounded-full text-gray-50 badge hover:bg-gray-200"
-              href="#"
-            >
-              Tailwind
-            </a>
-            <a
-              className="p-1 bg-indigo-500 rounded-full text-gray-50 badge hover:bg-gray-200"
-              href="#"
-            >
-              AlpineJS
-            </a>
-          </div>
+
           <a className="flex items-center text-gray-700" href="#">
             <div className="avatar">
               <img
@@ -59,6 +40,7 @@ const DetailedJobs = ({ job }) => {
         </div>
 
         <div className="w-full mx-auto prose md:w-3/4 lg:w-1/2">
+          <p>{job.excerpt}</p>
           <p>{job.description}</p>
         </div>
 
